@@ -1,6 +1,7 @@
 const { keccak256 } = require('ethereum-cryptography/keccak');
 const { bytesToHex } = require('ethereum-cryptography/utils');
 
+
 class MerkleTree {
   constructor(leaves) {
     this.leaves = leaves.map(Buffer.from).map(keccak256);
